@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Norwester';
+    src: url('fonts/Norwester-Regular/norwester-webfont.woff2'),
+    url('fonts/Norwester-Regular/norwester-webfont.woff2');
+}
+
+
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Norwester';
+    background-image: url('img/fondo.png');
+}
+
+.contenedor-padre{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 811px;
+}
+
+.contenedor-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 100%;
+    height: 80%;
+    z-index: 2;
+}
+
+.contenedor-lista img{
+    position: absolute;
+    top: 0;
+    height: 200px;
+    z-index: -1;
+}
+
+.contenedor-lista ul{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 20px;
+    line-height: 40px;
+    list-style: none;
+    margin-top: 136px;
+}
+
+.contenedor-lista ul .contenedor-li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #000000
+}
+
+.contenedor-lista ul .contenedor-sub-li{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+.footer-lista{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed #000000;
+    margin-top: 20px;
+    width: 80%;
+    height: 200px;
+    line-height: 27px;
+}
+
+.footer-lista .footer-cajitas-internas{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-lista-contacto .derecha{
+    align-items: end;
+}
